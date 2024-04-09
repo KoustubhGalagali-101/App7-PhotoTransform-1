@@ -101,8 +101,9 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-         
-  
+     var canvas2 = document.getElementById('myCanvas2');
+     var context2 = canvas.getContext("2d2");     
+     var imageData = context.getImageData(0, 0, 600, 500)
           
         } // end of img.onload
         
@@ -144,11 +145,11 @@
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
 
-        var canvas2 = document.getElementById('myCanvas2');
-        var context2 = canvas.getContext("2d2");
+       var canvas2 = document.getElementById('myCanvas2');
+        var context2 = canvas.getContext("2d");
         context2.font = '20pt Calibri';
         context2.fillStyle = "black";
-        context2.fillText("Altered image will go here", 10, 20);
+        context2.fillText("Blue image will go here", 10, 20);
       </script>
 
     </div><!-- /content -->
